@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-observability"
+version = "1.0.0"
+description = "Dependency-free LLM observability: tracing, token/cost accounting, latency percentiles, and PSI drift detection."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Arun Sreedhar" }]
+keywords = ["llm", "observability", "tracing", "cost", "monitoring", "drift", "opentelemetry"]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
